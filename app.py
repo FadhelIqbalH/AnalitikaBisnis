@@ -192,7 +192,7 @@ div[data-testid="metric-container"] {{
 # ==========================================
 @st.cache_data
 def load_data():
-    df = pd.read_excel('C:/Users/user/VScode/Analitika Bisnis/Coffee Shop Sales.xlsx')
+    df = pd.read_excel('Coffee Shop Sales.xlsx')
 
     df['transaction_date'] = pd.to_datetime(df['transaction_date'])
     df['hour'] = pd.to_datetime(df['transaction_time'], format='%H:%M:%S').dt.hour
